@@ -36,10 +36,6 @@ manhattan(subset(results, CHR == 1), highlight= SNPs_interesting_chr1, main = "I
 dev.off()
 # qqplot of the entire data
 
-
-
-
 pdf('qqplot_entire_data.pdf')
 qq(results$P, main = "Q-Q plot of GWAS p-values", xlim = c(0, 7), ylim = c(0, 
     12), pch = 20, col = "blue4", cex = 1.5, las = 1)
-
